@@ -1,3 +1,3 @@
 
-region = "us-west-2"
-ecr    = "mini-project-1"
+region = "ap-south-1"
+ecr    = "hadiya-backend-hitika"

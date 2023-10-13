@@ -45,8 +45,6 @@ resource "aws_cloudfront_distribution" "my_cloudfront_distribution" {
     max_ttl                = 86400
   }
 
-  price_class = "PriceClass_200"
-
   restrictions {
     geo_restriction {
       restriction_type = "whitelist"

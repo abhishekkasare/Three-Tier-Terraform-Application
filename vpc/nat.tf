@@ -8,6 +8,6 @@ resource "aws_nat_gateway" "nat-01" {
   allocation_id = aws_eip.eip-01.id
 
   tags = {
-    Name = "Terra-Nat"
+    Name = "tf-nat-hitika"
   }
 }

@@ -21,13 +21,20 @@ variable "vpc_name" {
   type        = string
 }
 
-
-#pub_subnets:
+#availability_zones:
 
 variable "availability_zone_1" {
   description = "Availability Zone for Subnet 01"
   type        = string
 }
+
+variable "availability_zone_2" {
+  description = "Availability Zone for Subnet 02"
+  type        = string
+}
+
+
+#pub_subnets:
 
 variable "pub_subnet1_cidr" {
   description = "cidr block for Subnet 01"
@@ -36,12 +43,6 @@ variable "pub_subnet1_cidr" {
 
 variable "pub_subnet1_name" {
   description = "Name tag for the Subnet 01"
-  type        = string
-}
-
-
-variable "availability_zone_2" {
-  description = "Availability Zone for Subnet 02"
   type        = string
 }
 
@@ -58,11 +59,6 @@ variable "pub_subnet2_name" {
 
 #priv_subnets:
 
-variable "availability_zone_3" {
-  description = "Availability Zone for Subnet 03"
-  type        = string
-}
-
 variable "priv_subnet1_cidr" {
   description = "cidr block for Subnet 03"
   type        = string
@@ -70,13 +66,6 @@ variable "priv_subnet1_cidr" {
 
 variable "priv_subnet1_name" {
   description = "Name tag for the Subnet 03"
-  type        = string
-}
-
-
-
-variable "availability_zone_4" {
-  description = "Availability Zone for Subnet 04"
   type        = string
 }
 
@@ -107,23 +96,23 @@ variable "priv_route_table_name" {
 }
 
 
-# public instance:
+# # public instance:
 
-variable "pub_instance_ami" {
-  description = "AMI ID for the public EC2 instance"
-}
+# variable "pub_instance_ami" {
+#   description = "AMI ID for the public EC2 instance"
+# }
 
-variable "pub_instance_type" {
-  description = "Instance type for the public EC2 instance"
-}
+# variable "pub_instance_type" {
+#   description = "Instance type for the public EC2 instance"
+# }
 
-variable "pub_instance_key_name" {
-  description = "Key pair name for the public EC2 instance"
-}
+# variable "pub_instance_key_name" {
+#   description = "Key pair name for the public EC2 instance"
+# }
 
-variable "pub_instance_name" {
-  description = "Name for the public EC2 instance"
-}
+# variable "pub_instance_name" {
+#   description = "Name for the public EC2 instance"
+# }
 
 
 # private instance:
